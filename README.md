@@ -23,7 +23,7 @@ mvn spring-boot:run
 ## Additional Features
 
 + Paging: specify page and size attributes e.g. http://localhost:8080/cakes?page=0&size=5
-+ Filtering: specify search attributes e.g. http://localhost:8080/cakes?title=carrot
++ Filtering: specify search attributes e.g. http://localhost:8080/cakes?title=lemon
 + Sorting: specify sort attributes: e.g. http://localhost:8080/cakes?sort=title,desc
 
 ## Additional Notes
