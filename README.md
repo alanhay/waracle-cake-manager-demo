@@ -15,7 +15,7 @@ mvn spring-boot:run
 + to see an HTML view of all cakes hit the root URL http://localhost:8080
 + to see a JSON view of all cake resources hit the URL http://localhost:8080/cakes
 + to see a JSON view of an individual cake resource hit the URL http://localhost:8080/cakes/{id}
-+ to add cake make a JSON POST request to the URL http://localhost:8080/cakes
++ to add a cake make a JSON POST request to the URL http://localhost:8080/cakes
 + to delete a cake send a DELETE request to http://localhost:8080/cakes/{id}
 + to update a cake make a JSON PATCH request to http://localhost:8080/cakes/{id} with the field(s) to be updated.
 

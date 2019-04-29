@@ -1,0 +1,62 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Cake Manager",
+		"_postman_id": "1d2c13a3-1bf8-af7c-647e-e3a10f0d366c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Cake",
+			"request": {
+				"url": "http://localhost:8080/cakes",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Lemon Drizzle Cake\",\n\t\"desc\": \"A cake with lemon drizzle\",\n\t\"image\": \"https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--901826_11.jpg?itok=94MKLzTf\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Edit a Cake (Partial Update via PATCH)",
+			"request": {
+				"url": "http://localhost:8080/cakes/3",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"desc\": \"A cake made from carrots and bugs bunny's favourite\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Cake",
+			"request": {
+				"url": "http://localhost:8080/cakes/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
