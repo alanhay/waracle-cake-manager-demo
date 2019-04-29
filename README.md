@@ -3,7 +3,6 @@
 Waracle Cake manager implementation to demonstrate a REST API built using the Spring Data Rest module. Exposes a fully featured REST API **without having to write controller end-points for boiler-plate operations (GET/POST etc.)**. It also supports advanced searching, sorting and paging without any code having to be written to support these operations.
 
 ## Running
-
 ```
 git clone https://github.com/alanhay/waracle-cake-manager-demo.git
 cd waracle-cake-manager-demo
@@ -26,3 +25,7 @@ mvn spring-boot:run
 + Paging: specify page and size attributes e.g. http://localhost:8080/cakes?page=0&size=5
 + Filtering: specify search attributes e.g. http://localhost:8080/cakes?title=carrot
 + Sorting: specify sort attributes: e.g. http://localhost:8080/cakes?sort=title,desc
+
+## Additional Notes
+
++ tests: there is not a lot of code to unit test so I haven't added. Given more time I may have added some integration tests.
